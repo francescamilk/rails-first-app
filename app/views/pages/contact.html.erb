@@ -1,0 +1,15 @@
+<h1>Contact our Team</h1>
+<%# <ul>
+  <li>Francesca</li>
+  <li>Johanna</li>
+  <li>Denis</li>
+  <li>Carolina</li>
+</ul> %>
+<ul>
+  <% @members.each do |member| %>
+    <div class="member-card">
+      <li><%= member %></li>
+    </div>
+  <% end %>
+</ul>
+<%= params[:testing_params] %>
